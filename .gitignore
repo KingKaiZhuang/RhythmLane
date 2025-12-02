@@ -1,0 +1,105 @@
+########################
+# OS / 編輯器
+########################
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+# 可能出現在外接硬碟上的系統檔
+.Spotlight-V100
+.Trashes
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# JetBrains / Rider
+.idea/
+*.sln.iml
+
+########################
+# Unity 一般
+########################
+
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+UserSettings/
+Records/
+SysInfo/
+
+# 資產匯入快取
+*/[Aa]sset[Ss]tore-5.x/
+
+# 自動產生的 VS / Rider 專案檔案
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+
+# Unity 雜項
+*.pidb.meta
+*.bak
+*.bak.meta
+*.orig
+*.orig.meta
+
+# Crash / 報告
+sysinfo.txt
+
+########################
+# 建置輸出
+########################
+
+# 一般 build 資料夾
+[Bb]uild/
+[Bb]uilds/
+
+# iOS Xcode
+xcuserdata/
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcworkspace
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+
+# Android / Gradle
+.gradle/
+**/gradle-wrapper.jar
+*.apk
+*.aab
+
+########################
+# 其他工具 / 暫存
+########################
+
+# 版本控制
+*.patch
+*.diff
+
+# 文字編輯器暫存
+*~
+*.swp
+*.swo
+
+# Rider solution caches
+.idea/
+*.DotSettings.user
