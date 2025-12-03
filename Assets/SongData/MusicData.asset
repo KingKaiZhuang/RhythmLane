@@ -17,4 +17,4 @@ MonoBehaviour:
   audioClip: {fileID: 8300000, guid: 496a95611cc334104a71e6c1500cc1c5, type: 3}
   coverImage: {fileID: 21300000, guid: 52bd6dfc173cd4ed08849ff948b5fb9b, type: 3}
   bpm: 60
-  length: 120
+  length: 200
