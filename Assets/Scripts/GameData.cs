@@ -2,4 +2,5 @@
 
 public static class GameData {
     public static MusicData selectedMusic;
+    public static NoteChart selectedChart;
 }

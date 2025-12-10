@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a3fc5146ca58454bbbfaf38bd612faa, type: 3}
+  m_Name: Ten years
+  m_EditorClassIdentifier: 
+  music: {fileID: 11400000, guid: 0757061cd5d0a4063b107bf674e1faf0, type: 2}
+  notes:
+  - time: 0.46931973
+    lane: 0
+  - time: 0.53331065
+    lane: 1
+  - time: 0.6613152
+    lane: 3
+  - time: 0.9599773
+    lane: 0
+  - time: 1.1733106
+    lane: 3
+  - time: 1.386644
+    lane: 0
+  - time: 1.6426531
+    lane: 3
+  - time: 1.7706575
+    lane: 2
+  - time: 1.9839909
+    lane: 1
+  - time: 2.1333106
+    lane: 0
+  - time: 2.218662
+    lane: 3
+  - time: 2.3893197
+    lane: 2
+  - time: 2.4959865
+    lane: 1
+  - time: 2.6453288
+    lane: 0
+  - time: 2.7519956
+    lane: 3
+  - time: 2.943991
+    lane: 2
+  - time: 3.0719955
+    lane: 1
+  - time: 3.1999774
+    lane: 0
+  - time: 3.306644
+    lane: 3
+  - time: 3.4986622
+    lane: 2
+  - time: 3.6906576
+    lane: 3
+  - time: 3.7759864
+    lane: 1
+  - time: 3.8399773
+    lane: 0
+  - time: 3.946644
+    lane: 3
+  - time: 4.0959864
+    lane: 0
+  - time: 4.1386623
+    lane: 1
+  - time: 4.1599774
+    lane: 2
