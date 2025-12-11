@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ab0eb8ad2b0d24f35997201c67a1c8e8, type: 3}
-  m_Name: MusicData
+  m_Name: Ten Years
   m_EditorClassIdentifier: 
-  musicName: Ten year
+  musicName: Ten years
   author: zhuang
   audioClip: {fileID: 8300000, guid: 496a95611cc334104a71e6c1500cc1c5, type: 3}
   coverImage: {fileID: 21300000, guid: 52bd6dfc173cd4ed08849ff948b5fb9b, type: 3}
   bpm: 60
   length: 200
+  noteChart: {fileID: 0}

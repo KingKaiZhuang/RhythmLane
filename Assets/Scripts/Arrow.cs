@@ -2,7 +2,10 @@ using UnityEngine;
 
 public class Arrow : MonoBehaviour
 {
+    public int laneIndex;      // 很重要：這顆箭屬於第幾條 Lane
+
     private float laneBottomY;
+
     public void SetLane(Transform lane)
     {
         laneBottomY = lane.position.y - 6f;
@@ -10,7 +13,6 @@ public class Arrow : MonoBehaviour
 
     void Update()
     {
-        // 超出底部自動刪除
         if (transform.position.y < laneBottomY)
         {
             Destroy(gameObject);

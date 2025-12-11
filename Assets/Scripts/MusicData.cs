@@ -11,4 +11,6 @@ public class MusicData : ScriptableObject
     public Sprite coverImage;
     public int bpm;
     public float length;
+    // 新增：這首歌對應的譜面
+    public NoteChart noteChart;
 }
