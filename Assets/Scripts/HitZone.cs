@@ -20,6 +20,17 @@ public class HitZone : MonoBehaviour
     public Color normalColor = Color.white;
     public Color pressedColor = Color.yellow;
 
+    [Header("判定寬度 (距離)")]
+    public float perfectThreshold = 0.25f;
+    public float greatThreshold = 0.5f;
+    public float goodThreshold = 0.8f;
+
+    [Header("判定顏色")]
+    public Color perfectColor = new Color(0, 1, 1);   // Cyan
+    public Color greatColor = Color.green;
+    public Color goodColor = Color.yellow;
+    public Color badColor = Color.red;
+
     void Start()
     {
         if (spriteRenderer == null)
@@ -46,15 +57,62 @@ public class HitZone : MonoBehaviour
         {
             Debug.Log($"[HitZone {laneIndex}] Key {keyForThisLane} Down");
 
-            if (spriteRenderer != null)
-                spriteRenderer.color = pressedColor;
+
 
             // 有箭在這條 Lane 的 HitZone 內才判定
             if (currentArrow != null)
             {
-                AddScore(10);
-                Destroy(currentArrow.gameObject);
-                currentArrow = null;
+                // 計算與 HitZone 中心的距離
+                float distance = Mathf.Abs(currentArrow.transform.position.y - transform.position.y);
+                
+                string rank = "Bad";
+                int scoreToAdd = 0;
+
+                if (distance <= perfectThreshold)
+                {
+                    rank = "Perfect";
+                    scoreToAdd = 100;
+                    if (spriteRenderer != null) spriteRenderer.color = perfectColor;
+                }
+                else if (distance <= greatThreshold)
+                {
+                    rank = "Great";
+                    scoreToAdd = 50;
+                    if (spriteRenderer != null) spriteRenderer.color = greatColor;
+                }
+                else if (distance <= goodThreshold)
+                {
+                    rank = "Good";
+                    scoreToAdd = 20;
+                    if (spriteRenderer != null) spriteRenderer.color = goodColor;
+                }
+                
+                Debug.Log($"[HitZone {laneIndex}] Hit! Dist={distance:F3} => {rank}");
+
+                if (scoreToAdd > 0)
+                {
+                    AddScore(scoreToAdd);
+                    Destroy(currentArrow.gameObject);
+                    currentArrow = null;
+                }
+                else
+                {
+                    // 雖然在 Trigger 內，但距離太遠視為 Bad (可選擇是否銷毀或只扣分/斷 Combo)
+                    // 這邊範例：視為 Bad，銷毀
+                    Debug.Log($"[HitZone {laneIndex}] Bad Hit... Dist={distance:F3}");
+                    
+                    if (spriteRenderer != null) spriteRenderer.color = badColor;
+
+                    Destroy(currentArrow.gameObject);
+                    currentArrow = null;
+                }
+            }
+            else
+            {
+                // 空揮 (Empty Hit)
+                if (spriteRenderer != null) spriteRenderer.color = badColor;
+                AddScore(-10);
+                Debug.Log($"[HitZone {laneIndex}] Empty Hit! -10");
             }
         }
 
