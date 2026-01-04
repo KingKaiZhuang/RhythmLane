@@ -535,6 +535,8 @@ MonoBehaviour:
   musics:
   - {fileID: 11400000, guid: d1e5e4c49dea24659bd8145f1dbfd8e6, type: 2}
   - {fileID: 11400000, guid: 0757061cd5d0a4063b107bf674e1faf0, type: 2}
+  - {fileID: 11400000, guid: 72f911c944cc84d33abaf212aea6b04c, type: 2}
+  - {fileID: 11400000, guid: 249fafba2c7a34c5bb77515bf808c845, type: 2}
   content: {fileID: 2107618884331776493}
   listItemPrefab: {fileID: 3817615047994113023, guid: bfc56a74f66074c41a8f041cb9ab7d41, type: 3}
   songDetailUI: {fileID: 1998675272}
@@ -2928,7 +2930,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'BPM: 120 Time: 2:30'
+  m_text: 'Time: 2:30'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ab0eb8ad2b0d24f35997201c67a1c8e8, type: 3}
-  m_Name: queen of heaven
+  m_Name: MusicData
   m_EditorClassIdentifier: 
-  musicName: "\u5929\u540E"
-  author: "\u9673\u52E2\u5B89"
-  audioClip: {fileID: 8300000, guid: 446e5d27312c546239fe8cdcab3a077b, type: 3}
-  coverImage: {fileID: 21300000, guid: ac93b604f21764edabe54ae6881a51bd, type: 3}
-  length: 289
-  noteChart: {fileID: 11400000, guid: 38064bd3f5ddd47d2b8ee80b25d1a912, type: 2}
+  musicName: test
+  author: jay
+  audioClip: {fileID: 8300000, guid: bd7825fe673cc4e7c9cdb3658c780f61, type: 3}
+  coverImage: {fileID: 21300000, guid: 3a1ad7112611e41f392f9fcf9454580d, type: 3}
+  length: 100
+  noteChart: {fileID: 11400000, guid: 330f6acec87cc46f7aa89849308b9d79, type: 2}
